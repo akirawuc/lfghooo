@@ -1,12 +1,44 @@
 import Card from './Card'
+import { ConnectKitButton } from 'connectkit';
+import { useAccount } from 'wagmi'
+
 
 
 const Marketplace = (props: any) => {
+
+    const { isConnected } = useAccount();
+
     return (
         <div className='marketplace'>
-            <div className='marketplace-header'>
-                <input placeholder='search...'></input>
-                <button>Reward</button>
+            <div className='mktp-header'>
+
+                {
+                isConnected && (
+                    <div className='welcome'>
+
+                    <h1>Welcome back!</h1>
+                    <h3>You've earned 16.9 GHO token.</h3>
+                    </div>
+                    )
+
+                }
+                {
+                !isConnected && (
+                    <div className='welcome'>
+                    <h1>Welcome to LFGHOSHOP</h1>
+                    <h3>Connect wallet to mint NFTs with GHO token!</h3>
+                    <div className='spacer'></div>
+                    <ConnectKitButton />
+                    </div>
+                    
+                  )
+                }
+
+            
+
+        
+
+
                 
             </div>
             <div className='card-container'>

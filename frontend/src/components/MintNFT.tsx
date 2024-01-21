@@ -1,7 +1,7 @@
-import { useAccount} from "wagmi";
+import { useAccount, usePrepareContractWrite, useContractWrite, useWaitForTransaction, erc721ABI,} from "wagmi";
 import { useModal } from "connectkit";
 
-const Header = () => {
+const MintNFT = () => {
 
     const { isConnected } = useAccount();
     const { setOpen } = useModal();
@@ -29,4 +29,4 @@ const Header = () => {
         
     
 
-export default Header;
+export default MintNFT;
