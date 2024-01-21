@@ -7,3 +7,9 @@
 [submodule "gho-arbitrage/lib/gho-core"]
 	path = gho-arbitrage/lib/gho-core
 	url = https://github.com/aave/gho-core
+[submodule "gho-arbitrage/lib/v3-periphery"]
+	path = gho-arbitrage/lib/v3-periphery
+	url = https://github.com/Uniswap/v3-periphery
+[submodule "gho-arbitrage/lib/v3-core"]
+	path = gho-arbitrage/lib/v3-core
+	url = https://github.com/Uniswap/v3-core
