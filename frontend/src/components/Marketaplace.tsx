@@ -6,6 +6,7 @@ const Marketplace = (props: any) => {
         <div className='marketplace'>
             <div className='marketplace-header'>
                 <input placeholder='search...'></input>
+                <button>Reward</button>
                 
             </div>
             <div className='card-container'>

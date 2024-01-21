@@ -11,6 +11,7 @@ html, body {
     background-color: #f9f9f9;
 }
 
+
 header {
     display: flex;
     flex-direction: row;
@@ -24,11 +25,37 @@ header {
 }
 
 nav {    
-    flex: 0.75;
+    flex: 0.3;
     padding-left: 20px;
 
     
 }
+
+button {
+    padding: 8px;
+    border: 0;
+    color: #fff;
+    background: rgb(118,78,255);
+    background: linear-gradient(300deg, rgba(118,78,255,1) 0%, rgba(177,116,255,1) 100%);
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;  
+}
+
+button:hover {
+    padding: 8px;
+    border: 0;
+    color: #fff;
+    background: rgb(118,78,255);
+    background: linear-gradient(300deg, rgba(118,78,255,1) 0%, rgba(177,116,255,1) 100%);
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition-duration: 500ms;
+    opacity: 0.9;
+}
+
 
 h1 {
     font-weight: 700;
@@ -52,7 +79,7 @@ nav li a {
 }
 
 .project-name {
-    flex: 0.05;
+    flex: 0.4;
     justify-content: center;
     padding: 20px 0px 20px 100px;
     color: #fff;
@@ -84,6 +111,7 @@ nav li a {
     display: flex;
     align-items: center;
     margin-top: 15px;
+    justify-content: space-between;
 }
 
 .marketplace-header input{
@@ -92,6 +120,13 @@ nav li a {
     border: 1px solid #eeeeee;
     width: 320px;
 }
+
+.marketplace-header button{
+    border-radius: 10px;
+    width: 100px;
+
+}
+
 
 
 .card-container {
@@ -105,7 +140,7 @@ nav li a {
 
 .card {
     width: 270px;
-    height: 360px;
+    height: 405px;
 
     background-color: #fff;
     margin: 15px 0px;
@@ -137,13 +172,22 @@ nav li a {
     flex: 1.5;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 20px;
     justify-content: space-around;
+    align-items: left;
 
 }
 
-.card h3{
+.card h3 {
     padding: 0px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    width: 100%;
+    overflow-wrap: break-word;
+    font-size: 0.8rem;
+    color: grey;
 }
 .card h4 {
     font-weight: normal;
@@ -164,24 +208,14 @@ nav li a {
 }
 
 .card:hover button{
-    transform: translateY(-40px);
+    transform: translateY(-45px);
     transition-duration: 0.3s;
 }
 
-
-.card button:hover {
-    padding: 8px;
-    border-radius: 6px;
-    border: 0;
-    color: #fff;
-    background: rgb(118,78,255);
-    background: linear-gradient(300deg, rgba(118,78,255,1) 0%, rgba(177,116,255,1) 100%);
-    font-weight: 700;
-    cursor: pointer;
-    width: 100%;
-    transition-duration: 500ms;
-    
+.card:hover h4{
+    visibility: hidden;
 }
+
 
 .empty {
     visibility: hidden ;

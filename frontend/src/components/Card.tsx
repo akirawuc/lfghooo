@@ -7,6 +7,7 @@ const Card = (props: any) => {
             <div className="card-details">
                 
                     <h3>{props.nft.name}</h3>
+                    <p>{props.nft.address}</p>
                     <h4>{props.nft.price} ETH</h4>
 
                 

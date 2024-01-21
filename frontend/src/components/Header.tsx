@@ -3,7 +3,7 @@ const Header = () => {
     return (
 
         <header>
-            <h1 className='project-name'>LFGHO</h1>
+            <h1 className='project-name'>Let's Gho Shopping</h1>
             {/* <nav>
             <ul>
             <li><a href='#'>Market</a></li>
