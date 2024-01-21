@@ -2,15 +2,15 @@ import Card from './Card'
 import { ConnectKitButton } from 'connectkit';
 import { useAccount } from 'wagmi'
 
-
-
 const Marketplace = (props: any) => {
 
     const { isConnected } = useAccount();
 
+
     return (
         <div className='marketplace'>
             <div className='mktp-header'>
+
 
                 {
                 isConnected && (
@@ -25,7 +25,7 @@ const Marketplace = (props: any) => {
                 {
                 !isConnected && (
                     <div className='welcome'>
-                    <h1>Welcome to LFGHOSHOP</h1>
+                    <h1>LFGHOSHOP!</h1>
                     <h3>Connect wallet to mint NFTs with GHO token!</h3>
                     <div className='spacer'></div>
                     <ConnectKitButton />
