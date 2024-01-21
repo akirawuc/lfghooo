@@ -2,6 +2,9 @@
 import './style.css';
 import Header from './components/Header';
 import Marketplace from './components/Marketaplace';
+import { config } from './config'
+import { WagmiConfig } from "wagmi";
+import { ConnectKitProvider } from "connectkit";
 
 
 const App = () => {
@@ -30,6 +33,8 @@ const App = () => {
   const nfts = [nft1, nft2, nft3, nft1, nft2, nft3, nft1, nft2, nft3, nft1];
 
   return (
+    <WagmiConfig config={config}> 
+      <ConnectKitProvider theme="nouns" >
     <div>
       <head>
       <style>
@@ -44,6 +49,8 @@ const App = () => {
       
       
     </div>
+    </ConnectKitProvider>
+    </WagmiConfig> 
   );
 }
 

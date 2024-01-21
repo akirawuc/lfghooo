@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-color: white;
+    background: #19191a;    
     position: fixed;
     width: 100%;
     border-bottom: 1px solid #eeeeee;
@@ -55,7 +55,7 @@ nav li a {
     flex: 0.05;
     justify-content: center;
     padding: 20px 0px 20px 100px;
-    color: rgba(149,98,214,1) 100%;
+    color: #fff;
     font-weight: 900;
 
 }
@@ -155,8 +155,8 @@ nav li a {
     padding: 8px;
     border: 0;
     color: #fff;
-    background: rgb(34,195,184);
-    background: linear-gradient(60deg, rgba(34,195,184,1) 0%, rgba(149,98,214,1) 100%);
+    background: rgb(118,78,255);
+    background: linear-gradient(300deg, rgba(118,78,255,1) 0%, rgba(177,116,255,1) 100%);
     font-weight: 700;
     cursor: pointer;
     width: 100%;
@@ -174,12 +174,11 @@ nav li a {
     border-radius: 6px;
     border: 0;
     color: #fff;
-    background: rgb(34,195,184);
-    background: linear-gradient(60deg, rgba(34,195,184,1) 0%, rgba(149,98,214,1) 100%);
+    background: rgb(118,78,255);
+    background: linear-gradient(300deg, rgba(118,78,255,1) 0%, rgba(177,116,255,1) 100%);
     font-weight: 700;
     cursor: pointer;
     width: 100%;
-    scale: 1.05;
     transition-duration: 500ms;
     
 }
