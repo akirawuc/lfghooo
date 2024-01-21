@@ -31,7 +31,7 @@ nav {
     
 }
 
-button {
+.marketplace button {
     padding: 8px;
     border: 0;
     color: #fff;
@@ -43,7 +43,7 @@ button {
     font-size: 1rem;  
 }
 
-button:hover {
+.marketplace button:hover {
     padding: 8px;
     border: 0;
     color: #fff;
@@ -124,10 +124,12 @@ nav li a {
 .marketplace-header button{
     border-radius: 10px;
     width: 100px;
-
 }
 
-
+.marketplace-header button:hover{
+    border-radius: 10px;
+    width: 100px;
+}
 
 .card-container {
     display: flex;
@@ -208,7 +210,7 @@ nav li a {
 }
 
 .card:hover button{
-    transform: translateY(-45px);
+    transform: translateY(-46px);
     transition-duration: 0.3s;
 }
 

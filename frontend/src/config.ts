@@ -1,9 +1,9 @@
 import { createConfig } from "wagmi";
 import { getDefaultConfig } from "connectkit";
-import { mainnet } from "wagmi/chains";
+import { mainnet, arbitrum } from "wagmi/chains";
 
 
-const chains = [mainnet];
+const chains = [mainnet, arbitrum];
 
 export const config = createConfig(
   getDefaultConfig({
@@ -13,7 +13,7 @@ export const config = createConfig(
     chains,
 
     // Required
-    appName: "Your App Name",
+    appName: "Lotto",
 
     // Optional
     appDescription: "Your App Description",
