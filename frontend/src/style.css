@@ -87,6 +87,10 @@ nav li a {
 
 }
 
+.project-name img {
+    height:60px;
+}
+
 .connect-button {
     flex: 0.2;
     display: flex;
