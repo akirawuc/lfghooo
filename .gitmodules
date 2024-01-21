@@ -1,3 +1,9 @@
 [submodule "gho-arbitrage/lib/forge-std"]
 	path = gho-arbitrage/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "gho-arbitrage/lib/openzeppelin-contracts"]
+	path = gho-arbitrage/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "gho-arbitrage/lib/gho-core"]
+	path = gho-arbitrage/lib/gho-core
+	url = https://github.com/aave/gho-core
