@@ -125,6 +125,26 @@ const ABI = [
           internalType: "uint256",
           name: "ghoAmount",
           type: "uint256"
+        },
+        {
+          internalType: "uint256",
+          name: "deadline",
+          type: "uint256"
+        },
+        {
+          internalType: "uint8",
+          name: "v",
+          type: "uint8"
+        },
+        {
+          internalType: "bytes32",
+          name: "r",
+          type: "bytes32"
+        },
+        {
+          internalType: "bytes32",
+          name: "s",
+          type: "bytes32"
         }
       ],
       name: "mint",
