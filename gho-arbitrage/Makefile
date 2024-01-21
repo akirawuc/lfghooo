@@ -1,7 +1,8 @@
-RPC_URL=https://mainnet.infura.io/v3/360a570f5c56455eb11e077353af1bc3
+FORK_RPC_URL=https://mainnet.infura.io/v3/360a570f5c56455eb11e077353af1bc3
+DEPLOY_RPC_URL=https://rpc.sepolia.org
 
 test:
-	forge test -vv --fork-url $(RPC_URL)
+	forge test -vv --fork-url $(FORK_RPC_URL)
 	#forge test -vv
 
 build:
@@ -12,13 +13,11 @@ lint:
 	npx prettier --write --plugin=prettier-plugin-solidity 'src/**/*.sol'
 
 localnet:
-	anvil --chain-id=1
+	anvil --fork-url $(FORK_RPC_URL) --chain-id=1337
 
 deploy:
 	forge script DeploymentScript \
-        --private-key $(PRIVATE_KEY) \
-        --rpc-url $(RPC_URL) \
-        --chain-id 11155111 \
+        --rpc-url $(DEPLOY_RPC_URL) \
         --json \
         --broadcast \
         -s "deploy()" \
