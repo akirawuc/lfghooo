@@ -3,8 +3,9 @@ import './style.css';
 import Header from './components/Header';
 import Marketplace from './components/Marketaplace';
 import { config } from './config'
-import { WagmiConfig } from "wagmi";
+import { WagmiConfig, erc721ABI, useContractRead } from "wagmi";
 import { ConnectKitProvider } from "connectkit";
+import { useEffect } from 'react';
 
 
 const App = () => {
