@@ -1,9 +1,9 @@
 import { createConfig } from "wagmi";
 import { getDefaultConfig } from "connectkit";
-import { mainnet, arbitrum } from "wagmi/chains";
+import { mainnet, arbitrum, arbitrumSepolia } from "wagmi/chains";
 
 
-const chains = [mainnet, arbitrum];
+const chains = [mainnet, arbitrum, arbitrumSepolia];
 
 export const config = createConfig(
   getDefaultConfig({
